@@ -1,0 +1,93 @@
+/* CSS */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.code-editor {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 50px;
+  max-width: 600px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.toolbar button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.toolbar button:hover {
+  background-color: #1c75a3;
+}
+
+#code {
+  width: 100%;
+  min-height: 300px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  border: 1px solid #ccc;
+}
+
+/* Style the lock button */
+#lock-button {
+  background-color: #e74c3c;
+}
+
+#lock-button:hover {
+  background-color: #c0392b;
+}
+
+/* Style the save button */
+#save-button {
+  background-color: #27ae60;
+}
+
+#save-button:hover {
+  background-color: #219f56;
+}
+/* Add styles for the alert */
+.alert {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Add a class for showing the alert */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
